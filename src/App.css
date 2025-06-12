@@ -16,7 +16,7 @@ body {
 
 /* Home Section Specific */
 .home-section {
- height: 100vh;
+ height: 130vh;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -28,6 +28,12 @@ body {
  transition: transform 0.3s ease;
  margin-top: 50px;
  z-index: 900;
+}
+
+.about-section {
+  padding: 4rem 2rem;
+  background: #000;
+  margin-top: 2rem; /* Optional, if it looks too tight */
 }
 
 
@@ -228,6 +234,7 @@ section p {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font: 100;
 }
 
 .buy-button:hover {
@@ -250,4 +257,215 @@ section p {
 
 .shop-more-button:hover {
   background-color: #0056b3;
+}
+
+.gallery-section{
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background: transparent;
+  z-index: 900;
+  scroll-behavior: smooth;
+}
+
+.gallery-section img{
+  z-index: 900;
+  pointer-events: auto;
+  cursor: none;
+  width: 90%;
+  transition: transform 0.3s ease;
+
+}
+
+.gallery-button{
+
+ z-index: 900;
+ position: relative;
+ margin-top: 10px;
+ padding: 10px 30px;
+ background-color: #fff;
+ color: #000;
+ border-radius: 300px;
+ cursor: pointer;
+ font-size: 20px;
+ border: none;
+
+}
+
+.gallery-button:hover{
+transform: scale(1.05); /* Slight zoom */
+ background-color: #edff21;
+ color: #2684ff;
+}
+
+#offers {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#offers h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ddcbcb;
+}
+
+.offer-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.offer-form input[type="email"] {
+  padding: 10px 15px;
+  width: 250px;
+  border: 1px solid #010101;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.offer-form button {
+  padding: 10px 20px;
+  background-color: #1227c8;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.offer-form button:hover {
+  background-color: #cdc712;
+}
+
+
+
+.offer-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #000000, #242525);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.offer-section h2 {
+  font-size: 2rem;
+  color: #2d3a4b;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.offer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.offer-form input[type="message"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.offer-form input[type="message"]:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
+}
+
+.offer-form button {
+  background: #22ff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.offer-form button:hover {
+  background: #357ab8;
+  transform: translateY(-2px);
+}
+
+
+
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #000000;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fffdfd;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 200px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.instagram {
+  border-top: 4px solid #e1306c;
+}
+
+.website {
+  border-top: 4px solid #0077b5;
+}
+
+.whatsapp {
+  border-top: 4px solid #25d366;
 }
